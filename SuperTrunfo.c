@@ -7,14 +7,14 @@ struct Carta {
     char nomeCidade[50];     // Nome da cidade
     int populacao;           // População da cidade
     float area;              // Área em km²
-    float pib;               // PIB em reais
+    float pib;               // PIB
     int pontosTuristicos;    // Número de pontos turísticos
 };
 
 int main() {
     struct Carta carta1, carta2;
 
-    // Dados da carta 1 - Gravatá
+    // Dados fixos para Gravatá - Pernambuco
     sprintf(carta1.estado, "PE");
     sprintf(carta1.codigo, "PE01");
     sprintf(carta1.nomeCidade, "Gravata");
@@ -23,7 +23,7 @@ int main() {
     carta1.pib = 1000000000.0;
     carta1.pontosTuristicos = 100;
 
-    // Dados da carta 2 - Recife
+    // Dados fixos para carta 2 - Recife - Pernambuco
     sprintf(carta2.estado, "PE");
     sprintf(carta2.codigo, "PE02");
     sprintf(carta2.nomeCidade, "Recife");
